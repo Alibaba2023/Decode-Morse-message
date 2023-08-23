@@ -19,4 +19,6 @@ def decode(message)
   message.split('   ').map { |word| decode_word(word) }.join(' ')
 end
 
-puts decode('- .... .. ...   .. ...   --- ..- .-.   ..-. .. .-. ... -   .-. ..- -... -.--   .--. .-. --- --. .-. .- -- -.-.--')
+message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+decoded_message = decode(message)
+puts "Decoded message: #{decoded_message}"
